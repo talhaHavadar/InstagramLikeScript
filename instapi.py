@@ -1,21 +1,25 @@
+"""
 # This script written by Talha Havadar
+"""
 from instagram.client import InstagramAPI
 from instagram.bind import InstagramAPIError
 import sys
 
-access_token = "1447106861.66a7a6f.2e43bd3dc3874e01baf98b092ba82355" # Your access token generated from 'get_access_token.py' script from python-instagram github repository
-user_id = "1447106861" # Your userid given by 'get_access_token.py' script
-client_id = "66a7a6fc2a08489bb9b5066a316895da" # Your client id from instagram developer site
-client_secret = "dacc9503772147268d01789dc0b141b9" # Your client secret from instagram developer site
-my_username = "talhahavadar"
+access_token = "XXXXXXX" # Your access token generated from 'get_access_token.py' script from python-instagram github repository
+user_id = "XXXXXXX" # Your userid given by 'get_access_token.py' script
+client_id = "XXXXXXX" # Your client id from instagram developer site
+client_secret = "XXXXXXX" # Your client secret from instagram developer site
+my_username = "XXXXXXX" # Your instagram username
 api = InstagramAPI(access_token = access_token, client_secret = client_secret)
 content, next_ = api.user_follows(user_id=user_id)
 
+
+# Add your buddy's instagram username here to 'bros' list!!
 bros = [
-	"gulgunpekmezci",
-	"neslihanatn",
-	"esmaorduluu",
-	"gurcan.aldemir"
+	"XXXXXXX",
+	"XXXXXXX",
+	"XXXXXXX",
+	"XXXXXXX"
 ]
 
 def amILikeThisPost(media_id = None):
